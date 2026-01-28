@@ -12,7 +12,7 @@ fetch("data/products.json")
         <h3>${product.name}</h3>
         <p>₹${product.price}</p>
         <p>${product.description}</p>
-        <button onclick="buyOnWhatsApp('${product.name}', ${product.price})">
+        <button onclick="buyOnWhatsApp('${product.name}', ${product.price} ,${product.id})">
           Buy on WhatsApp
         </button>
       `;
@@ -21,10 +21,10 @@ fetch("data/products.json")
     });
   });
 
-function buyOnWhatsApp(name, price) {
-  const phone = "91XXXXXXXXXX";
+function buyOnWhatsApp(name, price, id) {
+  const phone = "7507194820";
   const msg = encodeURIComponent(
-    `Hi, I want to buy *${name}* for ₹${price}`
+    `Hi, I want to buy *${name}* for ₹${price} : ID:${id}`
   );
 
   window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
