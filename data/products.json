@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Gold Plated Necklace",
+    "price": 1299,
+    "image": "data/images/necklace.jpg",
+    "description": "Elegant gold plated necklace for weddings."
+  },
+  {
+    "id": 2,
+    "name": "Silver Ring",
+    "price": 499,
+    "image": "data/images/ring.jpg",
+    "description": "Minimal silver ring for daily wear."
+  }
+]
